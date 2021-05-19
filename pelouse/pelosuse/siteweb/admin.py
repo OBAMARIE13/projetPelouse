@@ -28,7 +28,7 @@ class NewslettersAdmin(admin.ModelAdmin):
 @admin.register(models.Temoignages)
 class TemoignagesAdmin(admin.ModelAdmin):
     # champs a afficher
-    list_display = ("message", "photo", "poste", "date_add", "date_update", "status")
+    list_display = ("message", "nom", "photo", "poste", "date_add", "date_update", "status")
 
 
 # model sociaux

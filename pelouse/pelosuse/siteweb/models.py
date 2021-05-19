@@ -49,6 +49,7 @@ class Newsletters(models.Model):
 
 class Temoignages(models.Model):
     message = models.TextField()
+    nom = models.CharField(max_length= 200)
     photo = models.FileField()
     poste = models.CharField(max_length = 200)
     date_add = models.DateTimeField(auto_now=True)

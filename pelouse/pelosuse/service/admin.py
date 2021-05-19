@@ -23,3 +23,8 @@ class GallerieAdmin(admin.ModelAdmin):
 @admin.register(models.Categorie)
 class CategorieAdmin(admin.ModelAdmin):
     list_display = ('nom', 'date_add', 'date_update', 'status')
+    
+    
+@admin.register(models.Pelouse_care)
+class Pelouse_careAdmin(admin.ModelAdmin):
+    list_display = ('nonsaison', 'image', 'description', 'date_add', 'date_update', 'status')
